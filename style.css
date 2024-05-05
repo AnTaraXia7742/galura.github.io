@@ -216,6 +216,9 @@ header .icons #menu-bars {
   header {
     padding: 1rem 2rem;
   }
+  .footer-distributed {
+    padding: 20px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -251,6 +254,23 @@ header .icons #menu-bars {
     margin: 1rem;
     font-size: 2rem;
   }
+
+  .footer-distributed {
+    flex-direction: column !important;
+    align-items: center !important;
+  }
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center,
+  .footer-distributed .footer-right {
+    display: block !important;
+    width: 100% !important;
+    margin-bottom: 1rem !important;
+    text-align: center !important;
+  }
+  .footer-distributed .footer-left,
+  .footer-distributed .footer-center {
+    margin-bottom: 2rem !important;
+  }
 }
 @media (max-width: 991px) {
   html {
@@ -259,6 +279,9 @@ header .icons #menu-bars {
   .products .box-container .box img {
     height: auto;
     width: 100%;
+  }
+  .footer-distributed {
+    padding: 20px; /* Reduce padding for smaller screens */
   }
 }
 
