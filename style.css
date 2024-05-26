@@ -277,8 +277,8 @@ header .icons #menu-bars {
   color: var(--black);
   font-size: 1.5rem;
 }
-.article .box-container .box .btn {
-  font-size: 10px;
+.article .box-container .box a {
+  font-size: 15px;
 }
 
 .article .box-container .box span {
