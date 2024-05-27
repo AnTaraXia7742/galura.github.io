@@ -305,6 +305,19 @@ header .icons #menu-bars {
   color: var(--green);
 }
 
+.asesmen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 520px;
+}
+
+.asesmen iframe {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
