@@ -31,3 +31,19 @@ var swiper = new Swiper('.home-slider', {
   },
   loop: true,
 });
+
+const priceElement = document.getElementById('price');
+
+// Set default price (optional)
+let price = 75000; // Replace with default price (IDR)
+
+// Update price based on size selection (implement logic to handle size selection)
+if (selectedSize === 'Small') {
+  price = price * 0.75; // Adjust price multiplier for Small size
+} else if (selectedSize === 'Medium') {
+  price = price; // Medium size keeps the default price
+} else if (selectedSize === 'Large') {
+  price = price * 1.25; // Adjust price multiplier for Large size
+}
+
+priceElement.textContent = `IDR ${price.toFixed(0)}`;
